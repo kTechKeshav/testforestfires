@@ -16,7 +16,7 @@
 🔗 **Live App**: [Click Here to Use the Application](https://testforestfires-dyi0.onrender.com/predict_data)
 ## 🖼 Screenshots
 <!-- Upload your screenshots to GitHub and paste the image URLs below --> 
-<img src="images/Prediction_Page.png" alt="Prediction Page UI" width="600"/>
+<img src="images/Prediction_Page.png" alt="Prediction Page UI" width="550" height="600"/>
 ---
 
 ## 🚀 Tech Stack
