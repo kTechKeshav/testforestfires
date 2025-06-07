@@ -1,4 +1,4 @@
-# 🔥 Forest Fire Area Prediction (Ridge Regression)
+# 🔥 Forest Fire Area Prediction
 
 [![Render Status](https://img.shields.io/badge/Deployed-Live%20on%20Render-success?style=for-the-badge&logo=render)](https://testforestfires-dyi0.onrender.com/predict_data)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python)](https://www.python.org/)
@@ -14,6 +14,15 @@
 ### R2 Score :  0.9842993364555512
 
 🔗 **Live App**: [Click Here to Use the Application](https://testforestfires-dyi0.onrender.com/predict_data)
+
+## 🎯 Real-World Use Case
+
+Forest fires are becoming more frequent due to climate change. Early prediction of the **scale of destruction** helps stakeholders take preventive actions. This system:
+
+- 📈 Predicts **how much area might burn** under specific weather conditions.
+- ⚠️ Aims to **assist forest departments, environmental agencies**, and **disaster response units**.
+- 🌱 Helps preserve **biodiversity**, **forests**, and **minimize CO₂ emissions**.
+
 ## 🖼 Screenshots
 <!-- Upload your screenshots to GitHub and paste the image URLs below --> 
 <img src="images/Prediction_Page.png" alt="Prediction Page UI" width="550" height="600"/>
@@ -36,6 +45,18 @@
 2. Data is normalized using `StandardScaler`.
 3. A trained Ridge Regression model predicts the affected area.
 4. The result is displayed on a separate webpage.
+
+---
+
+## 🔍 Interpreting FWI Values
+
+| **FWI Value**   | **Fire Danger Level** | **Meaning** |
+|-----------------|------------------------|-------------|
+| 0.0 – 5.0       | 🔵 **Low**              | Fires are unlikely or easily controlled. |
+| 5.1 – 12.0      | 🟡 **Moderate**         | Fires may start and require attention. |
+| 12.1 – 30.0     | 🟠 **High**             | Fires spread quickly and require active suppression. |
+| 30.1 – 50.0     | 🔴 **Very High**        | Fires ignite easily, spread rapidly. |
+| > 50.0          | ⚫ **Extreme**           | Explosive fire behavior; immediate emergency action needed. |
 
 ---
 
