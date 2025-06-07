@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Prediction Page</title>
+      <style>
+            body {
+                  background: #f5f7fa;
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  padding: 0;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  min-height: 120vh;
+            }
+            h1 {
+                  color: #2d3e50;
+                  margin-top: 40px;
+                  margin-bottom: 20px;
+            }
+            form {
+                  background: #fff;
+                  padding: 30px 40px;
+                  border-radius: 10px;
+                  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
+                  display: flex;
+                  flex-direction: column;
+                  gap: 1px;
+                  margin-bottom: 30px;
+            }
+            input[type="text"] {
+                  padding: 10px;
+                  border: 1px solid #bfc9d1;
+                  border-radius: 5px;
+                  font-size: 16px;
+                  outline: none;
+                  transition: border 0.2s;
+            }
+            input[type="text"]:focus {
+                  border: 1.5px solid #2980b9;
+            }
+            button {
+                  padding: 12px;
+                  background: #2980b9;
+                  color: #fff;
+                  border: none;
+                  border-radius: 5px;
+                  font-size: 16px;
+                  cursor: pointer;
+                  transition: background 0.2s;
+            }
+            button:hover {
+                  background: #1c5d8c;
+            }
+            h2 {
+                  color: #27ae60;
+                  margin-top: 0;
+            }
+      </style>
+</head>
+
+<body>
+      <h1>FWI Prediction</h1>
+
+      <form action="{{url_for('predict_datapoint')}}" method="post">
+            <input type="text" name="Temperature" placeholder="Temperature" required="required" > <br>
+            <input type="text" name="RH" placeholder="RH" required="required"> <br>
+            <input type="text" name="Ws" placeholder="Ws" required="required"> <br>
+            <input type="text" name="Rain" placeholder="Rain" required="required"> <br>
+            <input type="text" name="FFMC" placeholder="FFMC" required="required"> <br>
+            <input type="text" name="DMC" placeholder="DMC" required="required"> <br>
+            <input type="text" name="ISI" placeholder="ISI" required="required"> <br>
+            <input type="text" name="Classes" placeholder="Classes" required="required"> <br>
+            <input type="text" name="Region" placeholder="Region" required="required"> <br>
+
+            <button type="submit"> Predict </button>
+      </form>
+
+      <h2>The FWI prediction is {{results}}</h2>
+</body>
+
+</html>
