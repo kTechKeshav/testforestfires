@@ -14,7 +14,9 @@
 ### R2 Score :  0.9842993364555512
 
 🔗 **Live App**: [Click Here to Use the Application](https://testforestfires-dyi0.onrender.com/predict_data)
-
+## 🖼 Screenshots
+<!-- Upload your screenshots to GitHub and paste the image URLs below --> 
+<img src="images/Prediction_Page.png" alt="Prediction Page UI" width="600"/>
 ---
 
 ## 🚀 Tech Stack
@@ -88,10 +90,6 @@ python application.py
 ├── requirements.txt      # Dependencies
 └── README.md             # You're here!
 ```
-
-## 🖼 Screenshots
-<!-- Upload your screenshots to GitHub and paste the image URLs below --> 
-<img src="images/Prediction_Page.png" alt="Prediction Page UI" width="600"/>
 
 ## 👨‍💻 Author
 Made with ❤️ by Keshav Awasthi
