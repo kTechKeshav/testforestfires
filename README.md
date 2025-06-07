@@ -91,7 +91,7 @@ python application.py
 
 ## 🖼 Screenshots
 <!-- Upload your screenshots to GitHub and paste the image URLs below --> 
-Example: ![Homepage](images\Prediction_Page.png)
+<img src="images/Prediction_Page.png" alt="Prediction Page UI" width="600"/>
 
 ## 👨‍💻 Author
 Made with ❤️ by Keshav Awasthi
